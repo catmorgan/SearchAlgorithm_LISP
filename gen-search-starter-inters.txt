@@ -1,0 +1,271 @@
+gen-search-starter.lisp
+
+Depth Search for Vacuum-World
+==================================================
+Hey!  We found a goal node!!
+
+Generated 37 nodes in 0 seconds (0.0 sec/node)
+SUCCESS!!!
+
+*** BEGIN SOLUTION PATH ***
+
+(NODE:  (action = NIL)
+         STATE: Rob-Loc: (0 0), Dirt-Locs: ((0 0) (0 3) (1 2) (3 1))
+
+ NODE:  (action = #<Function VACUUM 21D24C52>)
+         STATE: Rob-Loc: (0 0), Dirt-Locs: ((0 3) (1 2) (3 1))
+
+ NODE:  (action = #<Function EAST 2009E8B2>)
+         STATE: Rob-Loc: (1 0), Dirt-Locs: ((0 3) (1 2) (3 1))
+
+ NODE:  (action = #<Function EAST 2009E8B2>)
+         STATE: Rob-Loc: (2 0), Dirt-Locs: ((0 3) (1 2) (3 1))
+
+ NODE:  (action = #<Function EAST 2009E8B2>)
+         STATE: Rob-Loc: (3 0), Dirt-Locs: ((0 3) (1 2) (3 1))
+
+ NODE:  (action = #<Function SOUTH 200C4422>)
+         STATE: Rob-Loc: (3 1), Dirt-Locs: ((0 3) (1 2) (3 1))
+
+ NODE:  (action = #<Function VACUUM 21D24C52>)
+         STATE: Rob-Loc: (3 1), Dirt-Locs: ((0 3) (1 2))
+
+ NODE:  (action = #<Function WEST 2009D4C2>)
+         STATE: Rob-Loc: (2 1), Dirt-Locs: ((0 3) (1 2))
+
+ NODE:  (action = #<Function WEST 2009D4C2>)
+         STATE: Rob-Loc: (1 1), Dirt-Locs: ((0 3) (1 2))
+
+ NODE:  (action = #<Function WEST 2009D4C2>)
+         STATE: Rob-Loc: (0 1), Dirt-Locs: ((0 3) (1 2))
+
+ NODE:  (action = #<Function SOUTH 200C4422>)
+         STATE: Rob-Loc: (0 2), Dirt-Locs: ((0 3) (1 2))
+
+ NODE:  (action = #<Function EAST 2009E8B2>)
+         STATE: Rob-Loc: (1 2), Dirt-Locs: ((0 3) (1 2))
+
+ NODE:  (action = #<Function VACUUM 21D24C52>)
+         STATE: Rob-Loc: (1 2), Dirt-Locs: ((0 3))
+
+ NODE:  (action = #<Function WEST 2009D4C2>)
+         STATE: Rob-Loc: (0 2), Dirt-Locs: ((0 3))
+
+ NODE:  (action = #<Function SOUTH 200C4422>)
+         STATE: Rob-Loc: (0 3), Dirt-Locs: ((0 3))
+
+ NODE:  (action = #<Function VACUUM 21D24C52>)
+         STATE: Rob-Loc: (0 3), Dirt-Locs: NIL
+
+)
+==============================================
+*** END SOLUTION PATH (length: 15) ***
+==============================================
+Overall Node Count: 37
+
+
+Breadth Search for Vacuum-World
+==================================================
+Hey!  We found a goal node!!
+
+Generated 31861 nodes in 2 seconds (6.277267E-5 sec/node)
+SUCCESS!!!
+
+*** BEGIN SOLUTION PATH ***
+
+(NODE:  (action = NIL)
+         STATE: Rob-Loc: (0 0), Dirt-Locs: ((0 0) (0 3) (1 2) (3 1))
+
+ NODE:  (action = #<Function VACUUM 21B6D52A>)
+         STATE: Rob-Loc: (0 0), Dirt-Locs: ((0 3) (1 2) (3 1))
+
+ NODE:  (action = #<Function SOUTH 21A4786A>)
+         STATE: Rob-Loc: (0 1), Dirt-Locs: ((0 3) (1 2) (3 1))
+
+ NODE:  (action = #<Function SOUTH 21A4786A>)
+         STATE: Rob-Loc: (0 2), Dirt-Locs: ((0 3) (1 2) (3 1))
+
+ NODE:  (action = #<Function SOUTH 21A4786A>)
+         STATE: Rob-Loc: (0 3), Dirt-Locs: ((0 3) (1 2) (3 1))
+
+ NODE:  (action = #<Function VACUUM 21B6D52A>)
+         STATE: Rob-Loc: (0 3), Dirt-Locs: ((1 2) (3 1))
+
+ NODE:  (action = #<Function EAST 2198863A>)
+         STATE: Rob-Loc: (1 3), Dirt-Locs: ((1 2) (3 1))
+
+ NODE:  (action = #<Function NORTH 21A4774A>)
+         STATE: Rob-Loc: (1 2), Dirt-Locs: ((1 2) (3 1))
+
+ NODE:  (action = #<Function VACUUM 21B6D52A>)
+         STATE: Rob-Loc: (1 2), Dirt-Locs: ((3 1))
+
+ NODE:  (action = #<Function EAST 2198863A>)
+         STATE: Rob-Loc: (2 2), Dirt-Locs: ((3 1))
+
+ NODE:  (action = #<Function EAST 2198863A>)
+         STATE: Rob-Loc: (3 2), Dirt-Locs: ((3 1))
+
+ NODE:  (action = #<Function NORTH 21A4774A>)
+         STATE: Rob-Loc: (3 1), Dirt-Locs: ((3 1))
+
+ NODE:  (action = #<Function VACUUM 21B6D52A>)
+         STATE: Rob-Loc: (3 1), Dirt-Locs: NIL
+
+)
+==============================================
+*** END SOLUTION PATH (length: 12) ***
+==============================================
+Overall Node Count: 31861
+
+
+Depth Search for Missionary/Cannibal
+==================================================
+Hey!  We found a goal node!!
+
+Generated 15 nodes in 0 seconds (0.0 sec/node)
+SUCCESS!!!
+
+*** BEGIN SOLUTION PATH ***
+
+(NODE:  (action = NIL)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 3, Cannibals: 3 
+Right Side --> Missionaries: 0, Cannibals: 0 
+
+ NODE:  (action = #<Function CROSS02 21B3B65A>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 3, Cannibals: 1 
+Right Side --> Missionaries: 0, Cannibals: 2 
+
+ NODE:  (action = #<Function CROSS01 21B3B5EA>)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 3, Cannibals: 2 
+Right Side --> Missionaries: 0, Cannibals: 1 
+
+ NODE:  (action = #<Function CROSS02 21B3B65A>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 3, Cannibals: 0 
+Right Side --> Missionaries: 0, Cannibals: 3 
+
+ NODE:  (action = #<Function CROSS01 21B3B5EA>)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 3, Cannibals: 1 
+Right Side --> Missionaries: 0, Cannibals: 2 
+
+ NODE:  (action = #<Function CROSS20 21B3B4AA>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 1, Cannibals: 1 
+Right Side --> Missionaries: 2, Cannibals: 2 
+
+ NODE:  (action = #<Function CROSS11 21B3B57A>)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 2, Cannibals: 2 
+Right Side --> Missionaries: 1, Cannibals: 1 
+
+ NODE:  (action = #<Function CROSS20 21B3B4AA>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 0, Cannibals: 2 
+Right Side --> Missionaries: 3, Cannibals: 1 
+
+ NODE:  (action = #<Function CROSS01 21B3B5EA>)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 0, Cannibals: 3 
+Right Side --> Missionaries: 3, Cannibals: 0 
+
+ NODE:  (action = #<Function CROSS02 21B3B65A>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 0, Cannibals: 1 
+Right Side --> Missionaries: 3, Cannibals: 2 
+
+ NODE:  (action = #<Function CROSS01 21B3B5EA>)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 0, Cannibals: 2 
+Right Side --> Missionaries: 3, Cannibals: 1 
+
+ NODE:  (action = #<Function CROSS02 21B3B65A>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 0, Cannibals: 0 
+Right Side --> Missionaries: 3, Cannibals: 3 
+
+)
+==============================================
+*** END SOLUTION PATH (length: 11) ***
+==============================================
+Overall Node Count: 15
+
+
+Breadth Search for Missionary/Cannibal
+==================================================
+Hey!  We found a goal node!!
+
+Generated 29 nodes in 0 seconds (0.0 sec/node)
+SUCCESS!!!
+
+*** BEGIN SOLUTION PATH ***
+
+(NODE:  (action = NIL)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 3, Cannibals: 3 
+Right Side --> Missionaries: 0, Cannibals: 0 
+
+ NODE:  (action = #<Function CROSS02 21B3B65A>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 3, Cannibals: 1 
+Right Side --> Missionaries: 0, Cannibals: 2 
+
+ NODE:  (action = #<Function CROSS01 21B3B5EA>)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 3, Cannibals: 2 
+Right Side --> Missionaries: 0, Cannibals: 1 
+
+ NODE:  (action = #<Function CROSS02 21B3B65A>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 3, Cannibals: 0 
+Right Side --> Missionaries: 0, Cannibals: 3 
+
+ NODE:  (action = #<Function CROSS01 21B3B5EA>)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 3, Cannibals: 1 
+Right Side --> Missionaries: 0, Cannibals: 2 
+
+ NODE:  (action = #<Function CROSS20 21B3B4AA>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 1, Cannibals: 1 
+Right Side --> Missionaries: 2, Cannibals: 2 
+
+ NODE:  (action = #<Function CROSS11 21B3B57A>)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 2, Cannibals: 2 
+Right Side --> Missionaries: 1, Cannibals: 1 
+
+ NODE:  (action = #<Function CROSS20 21B3B4AA>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 0, Cannibals: 2 
+Right Side --> Missionaries: 3, Cannibals: 1 
+
+ NODE:  (action = #<Function CROSS01 21B3B5EA>)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 0, Cannibals: 3 
+Right Side --> Missionaries: 3, Cannibals: 0 
+
+ NODE:  (action = #<Function CROSS02 21B3B65A>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 0, Cannibals: 1 
+Right Side --> Missionaries: 3, Cannibals: 2 
+
+ NODE:  (action = #<Function CROSS01 21B3B5EA>)
+         STATE: Boat Side: 1,
+ Left Side --> Missionaries: 0, Cannibals: 2 
+Right Side --> Missionaries: 3, Cannibals: 1 
+
+ NODE:  (action = #<Function CROSS02 21B3B65A>)
+         STATE: Boat Side: 0,
+ Left Side --> Missionaries: 0, Cannibals: 0 
+Right Side --> Missionaries: 3, Cannibals: 3 
+
+)
+==============================================
+*** END SOLUTION PATH (length: 11) ***
+==============================================
+Overall Node Count: 29
